@@ -15,6 +15,7 @@ public class BanhoTosaApplication {
 	public String gethomeTeste() {
 		return "Banho tosa - API Home";
 	}
+
 	public static void main(String[] args) {
 		SpringApplication.run(BanhoTosaApplication.class, args);
 	}
