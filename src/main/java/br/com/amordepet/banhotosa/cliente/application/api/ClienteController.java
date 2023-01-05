@@ -1,5 +1,7 @@
 package br.com.amordepet.banhotosa.cliente.application.api;
 
+import java.util.List;
+
 import org.springframework.web.bind.annotation.RestController;
 
 import br.com.amordepet.banhotosa.cliente.application.service.ClienteService;
@@ -10,7 +12,6 @@ import lombok.extern.log4j.Log4j2;
 @Log4j2
 @RequiredArgsConstructor
 public class ClienteController implements ClienteAPI {
-
 	private final ClienteService clienteService;
 
 	@Override
@@ -21,4 +22,10 @@ public class ClienteController implements ClienteAPI {
 		return clienteCriado;
 	}
 
+	@Override
+	public List<ClienteListResponse> getTodosClientes() {
+		log.info("[inicia] ClienteListResponse getTodosClientes");
+		log.info("[finaliza] ClienteListResponse getTodosClientes");
+		return null;
+	}
 }
